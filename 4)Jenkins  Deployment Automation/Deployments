@@ -1,0 +1,20 @@
+# Jenkinsfile for Deployment Stage
+pipeline {
+    agent any
+
+    stages {
+        stage('Deploy to Staging') {
+            steps {
+                // Deploy to staging environment
+                sh 'kubectl apply -f staging-deployment.yaml'
+            }
+        }
+        
+        stage('Deploy to Production') {
+            steps {
+                // Deploy to production environment
+                sh 'kubectl apply -f production-deployment.yaml'
+            }
+        }
+    }
+}

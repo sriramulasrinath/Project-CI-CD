@@ -1,0 +1,3 @@
+=>This Jenkins pipeline script has two deployment stages: 'Deploy to Staging' and 'Deploy to Production.'
+=>It runs on any available Jenkins agent.
+=>In each stage, it deploys the application to the respective environment using kubectl apply with Kubernetes manifests (staging-deployment.yaml and production-deployment.yaml).

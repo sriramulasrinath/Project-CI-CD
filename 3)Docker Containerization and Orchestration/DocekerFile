@@ -1,0 +1,8 @@
+# Dockerfile for your application
+FROM openjdk:11
+
+WORKDIR /app
+
+COPY target/your-app.jar /app
+
+CMD ["java", "-jar", "your-app.jar"]

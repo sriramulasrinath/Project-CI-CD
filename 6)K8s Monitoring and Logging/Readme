@@ -1,0 +1,4 @@
+=>This is a Kubernetes YAML manifest example for deploying Prometheus, a monitoring tool.
+=>It defines a Service and a Deployment for Prometheus.
+=>The Service makes Prometheus accessible on port 9090.
+=>The Deployment ensures that one instance of Prometheus is running.

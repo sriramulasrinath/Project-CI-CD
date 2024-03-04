@@ -1,0 +1,6 @@
+=>This Jenkins pipeline script includes a 'Test' stage.
+=>The pipeline runs on any available Jenkins agent.
+=>In the 'Test' stage, it executes different types of tests:
+    *Unit tests using Maven (mvn test).
+    *Integration tests with Node.js (npm test).
+    *End-to-end tests using a Python script (python run_e2e_tests.py).

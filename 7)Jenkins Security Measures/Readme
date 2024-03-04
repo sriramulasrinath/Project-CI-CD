@@ -1,0 +1,5 @@
+=>This Jenkins pipeline script includes a 'Security Checks' stage.
+=>It runs on any available Jenkins agent.
+=>In the 'Security Checks' stage, it performs security checks:
+    =>Dependency scanning using safety check.
+    =>Container vulnerability scanning using trivy on the specified container image (your-container-image:latest).

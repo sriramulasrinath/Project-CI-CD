@@ -1,0 +1,16 @@
+# Jenkinsfile for Build Stage
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                // Checkout source code from Git
+                git 'https://github.com/your/repo.git'
+                
+                // Build using your build tool (e.g., Maven, Gradle)
+                sh 'mvn clean install'
+            }
+        }
+    }
+}

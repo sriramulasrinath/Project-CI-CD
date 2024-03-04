@@ -1,0 +1,4 @@
+=>This Jenkins pipeline script defines a single stage called 'Build.'
+=>The pipeline is configured to run on any available Jenkins agent.
+=>In the 'Build' stage, it checks out the source code from the specified Git repository (https://github.com/your/repo.git).
+=>It then builds the project using the Maven build tool with the commands mvn clean install.

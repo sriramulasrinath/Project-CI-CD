@@ -1,0 +1,5 @@
+=>This Dockerfile is a basic example for containerizing a Java application.
+=>It uses the OpenJDK 11 base image.
+=>Sets the working directory to /app.
+=>Copies the built JAR file (your-app.jar) into the container.
+=>Defines the command to run the application using java -jar.

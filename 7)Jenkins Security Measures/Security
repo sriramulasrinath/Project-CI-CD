@@ -1,0 +1,16 @@
+# Jenkinsfile for Security Checks Stage
+pipeline {
+    agent any
+
+    stages {
+        stage('Security Checks') {
+            steps {
+                // Run dependency scanning
+                sh 'safety check'
+                
+                // Run container vulnerability scanning
+                sh 'trivy image your-container-image:latest'
+            }
+        }
+    }
+}

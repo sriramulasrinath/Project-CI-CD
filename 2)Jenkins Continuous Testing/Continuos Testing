@@ -1,0 +1,19 @@
+# Jenkinsfile for Test Stage
+pipeline {
+    agent any
+
+    stages {
+        stage('Test') {
+            steps {
+                // Run unit tests
+                sh 'mvn test'
+                
+                // Run integration tests
+                sh 'npm test'
+                
+                // Run end-to-end tests (e.g., using Selenium)
+                sh 'python run_e2e_tests.py'
+            }
+        }
+    }
+}

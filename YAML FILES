@@ -1,0 +1,18 @@
+#staging-deployment.yaml
+
+This Kubernetes Deployment manifest is for the staging environment.
+It specifies three replicas of the application.
+Selector and labels ensure proper identification and association with the environment.
+The container image tag is set to staging to differentiate it from the production deployment.
+The application container exposes port 8080.
+
+
+
+#production-deployment.yaml
+
+This Kubernetes Deployment manifest is for the production environment.
+It specifies five replicas of the application.
+Selector and labels ensure proper identification and association with the environment.
+The container image tag is set to latest, representing the latest production-ready version.
+The application container exposes port 8080.
+Remember to replace placeholders like your-app, your-container-image, and others with your actual application and image details. Adjust the replica counts, ports, and other configurations based on your application's requirements.

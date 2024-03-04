@@ -1,0 +1,3 @@
+Documentation is crucial but is typically written in a README file or documentation folder in your project repository. It includes details on pipeline setup, configuration, and troubleshooting guidelines.
+
+These code snippets provide a basic structure for the different stages of a CI/CD pipeline, but you should adapt them based on your project's specific requirements, tools, and technologies. Ensure to refer to the documentation of the tools and platforms you're using for accurate implementation.
